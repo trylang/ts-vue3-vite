@@ -1,0 +1,53 @@
+{
+  "name": "axxlol-enducation-web",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@aixuexi/cef-bridge": "^1.0.1",
+    "ant-design-vue": "^2.0.1",
+    "babel-plugin-import": "^1.13.3",
+    "jsencrypt": "^3.1.0",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.5",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@aixuexi/tol-utils": "^1.0.3",
+    "@aixuexi/vue-lol-upload-file": "^1.0.2",
+    "@types/node": "^14.14.33",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "@vitejs/plugin-vue": "^1.1.5",
+    "@vitejs/plugin-vue-jsx": "^1.1.2",
+    "@vue/compiler-sfc": "^3.0.5",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "eslint": "^7.22.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.7.0",
+    "husky": "^5.1.3",
+    "less": "^4.1.1",
+    "lint-staged": "^10.5.4",
+    "postcss": "^8.2.8",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.12.0",
+    "stylelint-config-recommended": "^4.0.0",
+    "stylelint-config-standard": "^21.0.0",
+    "typescript": "^4.2.3",
+    "vite": "^2.0.5",
+    "vite-plugin-style-import": "^0.8.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,vue}": "eslint --fix"
+  }
+}
